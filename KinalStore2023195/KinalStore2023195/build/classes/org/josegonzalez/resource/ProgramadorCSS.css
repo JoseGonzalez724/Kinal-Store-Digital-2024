@@ -1,0 +1,9 @@
+.anchorPane{
+    -fx-background-color: linear-gradient(to right bottom, #743484, #247aaf );
+}
+
+.pane{
+    -fx-background-color: #8a35b4;
+    -fx-background-radius: 20 20 20 20; 
+}
+

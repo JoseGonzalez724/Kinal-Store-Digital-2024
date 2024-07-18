@@ -1,0 +1,244 @@
+.menu-bar {
+    -fx-background-color: transparent ;
+    -fx-opacity: 0.5;
+    -fx-border-width: 2.0;
+}
+.menu-bar .label {
+    -fx-font-size: 14.0 pt;
+    -fx-font-family: "Bookman Old Style";
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10.0px;
+}
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing {
+    -fx-background: transparent;
+    -fx-opacity: 0.5;
+    -fx-text-fill: white;
+}
+.menu-item {
+    -fx-padding: 0.0em 0.0em 0.0em 0.0em;
+    -fx-text-fill: black;
+    -fx-background: #247aaf;
+}
+.menu-item .label{
+    -fx-font-size: 12.0 pt;
+    -fx-text-fill: white;
+    -fx-background-color: transparent;
+}
+.menu-item .label:hover{
+    -fx-font-size: 14.0 pt;
+    -fx-background: black ;
+    -fx-text-fill: white;
+}
+.context-menu {
+    -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color: transparent;
+    -fx-border-width: 0.2px;
+    -fx-border-color: transparent;
+    /** -fx-background-insets: 0.0, 1.0, 2.0;
+    -fx-background-radius: 0.0 6.0 6.0 6.0, 0.0 5.0 5.0 5.0, 0.0 4.0 4.0 4.0;
+    -fx-padding: 0.333333em 0.083333em 0.666667em 0.083333em;
+    -fx-opacity: 0.9;*/
+}
+
+.anchorPane{
+    -fx-background-color: linear-gradient(to right bottom, #743484, #247aaf);
+}
+
+.pane1{
+    -fx-background-color: #8a35b4;
+    -fx-background-radius: 20 20 20 20;
+}
+
+.pane2{
+    -fx-background-color: #743484;
+    -fx-background-radius: 20 0 0 20;
+}
+
+.pane3{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 20 20 20 20;
+}
+
+.pane4{
+    -fx-background-color: #247aaf;
+    -fx-background-radius: 20 20 20 20;
+}
+
+.pane5{
+    -fx-background-color: #544c94;
+    -fx-background-radius: 0 40 40 0;
+}
+
+.button1{
+    -fx-background-color: #544c94;
+    -fx-background-radius: 30 0 0 30;
+}
+
+.button1:hover{
+    -fx-border-color: #5bc5c3;
+    -fx-border-width: 0px 0px 0px 3px;
+}
+
+.button1:pressed{
+    -fx-background-color: transparent;
+}
+
+.button2{
+    -fx-background-color: linear-gradient(to right bottom, #743484, #247aaf);
+    -fx-background-radius: 20 20 20 20;
+}
+
+.button2:hover{
+    -fx-background-color: linear-gradient(to right bottom, #247aaf, #743484);
+}
+
+.button2:pressed{
+    -fx-background-color: #743484;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2;
+    -fx-border-radius: 30 30 30 30;
+}
+
+.shadow{
+    -fx-effect: dropshadow(three-pass-box, rgba(0.0,0.0,0.0,0.5), 8,0,0,0);
+}
+
+.shadow1{
+    -fx-effect: dropshadow(three-pass-box, rgba(10.5,10.5,10.5,10.5), 8,0,0,0);
+}
+
+.table-view1{
+    -fx-background-color: transparent;
+}
+.table-view1 .column-header-background{
+    -fx-background-color: #247aaf;
+    -fx-background-radius: 5px 5px 0 0 ;
+    -fx-background-insets: 0 0 0 0;
+}
+.table-view1 .column-header, .filter{
+    -fx-background-color: transparent;
+    -Ex-size: 40px;
+}
+
+.table-view1 .column-header .label{
+    -fx-text-fill: #fff;
+}
+
+.datepicker-invalid
+{
+    -fx-border-color: red;
+}
+
+.datepicker-valid
+{
+    -fx-border-color: null;
+}
+
+/* The main calendar pane */
+.calendar {
+
+}
+
+/* The calendar header, which contains the navigation elements. */
+.calendar-header
+{
+    -fx-background-color: linear-gradient(to bottom, derive(-fx-base,-70%), derive(-fx-base,-90%));
+    -fx-padding: 0.5em;
+   /* -fx-background-radius: 10;*/
+}
+
+/* The calendar footer, which contains the today button. It is only visible when the today button is shown */
+.calendar-footer
+{
+    -fx-background-color: linear-gradient(to top, derive(-fx-base,-70%), derive(-fx-base,-90%));
+    -fx-padding: 0.2em;
+}
+
+/* The 3 different panes, which show the month, the year, and the decades */
+.calendar-month-view, .calendar-year-view, .calendar-decades-view
+{
+    -fx-background-color: linear-gradient(to bottom, derive(-fx-base,80%), derive(-fx-base,40%));
+    -fx-padding: 0;
+}
+
+/* The usual button which either display the day of the current month, or the month in the year view, or the year in the decades view */
+.calendar-cell-current-month, .calendar-year-button, .calendar-month-button {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 0, 0, 0;
+    -fx-cursor: hand;
+    -fx-padding: 0.7em;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8;
+}
+
+/* The hover state of the buttons */
+.calendar-cell-current-month:hover, .calendar-year-button:hover, .calendar-month-button:hover {
+    -fx-background-color: -fx-cell-hover-color;
+}
+
+/* The day buttons for the previous and next month. */
+.calendar-cell-other-month {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0, 0, 0, 0;
+    -fx-opacity: 0.7;
+    -fx-cursor: hand;
+    -fx-padding: 0.7em;
+    -fx-background-radius: 8;
+}
+
+/* The hover state of this button. */
+.calendar-cell-other-month:hover {
+    -fx-background-color: -fx-cell-hover-color;
+}
+
+/* The button which shows the current day. */
+.calendar-cell-today {
+     -fx-background-color: -fx-accent;
+}
+
+/* The buttons in the header and the footer */
+.calendar-navigation-button, .calendar-navigation-title, .calendar-today-button {
+    -fx-background-color: null;
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+}
+
+/* don't make the title button transparent, when it is disabled in the decades view */
+.calendar-navigation-title:disabled {
+    -fx-opacity: 1;
+}
+
+/* The arrow for navigation. SVG is used for it. */
+.calendar-navigation-arrow {
+    /*padding determines the size of the arrow; This should match the design size in the SVG */
+    -fx-padding: 4 3.5 4 3.5;
+    -fx-padding: 0.333333em 0.333333em 0.333333em 0.333333em; /* 2 3.5 2 3.5 */
+    -fx-shape: "M 100 100 L 300 100 L 200 300 z";
+    -fx-background-color: #ffffff;
+}
+
+/* The cell which contain the week day names */
+.calendar-weekdays {
+    -fx-background-color: -fx-body-color;
+    -fx-padding: 3px;
+}
+
+.calendar-week-number {
+    -fx-font-size: 0.8em;
+    -fx-padding: 4px;
+}
+
+.combo-box1{
+    -fx-background-color: transparent;
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+    -fx-background-radius: 20 20 20 20;
+    -fx-border-radius: 20 20 20 20;
+    -fx-border-color: #247aaf;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em;
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: CENTER;
+}

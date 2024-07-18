@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="940.0" styleClass="anchorPane" stylesheets="@../resource/ProgramadorCSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="47.0" layoutY="147.0" prefHeight="339.0" prefWidth="464.0" stylesheets="@../resource/ProgramadorCSS.css">
+         <styleClass>
+            <String fx:value="Pane" />
+            <String fx:value="pane" />
+         </styleClass>
+      </Pane>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="395.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Logo.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="331.0" fitWidth="301.0" layoutX="620.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/yo.jpg" />
+         </image>
+         <effect>
+            <DropShadow height="71.41" radius="34.4625" width="68.44">
+               <input>
+                  <Glow level="0.36" />
+               </input>
+            </DropShadow>
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

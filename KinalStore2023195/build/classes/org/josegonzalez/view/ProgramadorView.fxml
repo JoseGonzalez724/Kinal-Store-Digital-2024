@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="950.0" styleClass="anchorPane" stylesheets="@../resource/KinalStoreCSS.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.josegonzalez.controller.ProgramadorController">
+   <children>
+      <Pane layoutX="26.0" layoutY="141.0" prefHeight="327.0" prefWidth="467.0" styleClass="pane1" stylesheets="@../resource/KinalStoreCSS.css">
+         <children>
+            <Pane prefHeight="327.0" prefWidth="180.0" styleClass="pane2" stylesheets="@../resource/KinalStoreCSS.css">
+               <children>
+                  <Label alignment="TOP_CENTER" layoutY="219.0" prefHeight="33.0" prefWidth="180.0" text="Fecha de Creación" textFill="WHITE">
+                     <font>
+                        <Font name="Eras Demi ITC" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" layoutY="179.0" prefHeight="33.0" prefWidth="180.0" text="Carné" textFill="WHITE">
+                     <font>
+                        <Font name="Eras Demi ITC" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" layoutY="131.0" prefHeight="33.0" prefWidth="180.0" text="Apellidos" textFill="WHITE">
+                     <font>
+                        <Font name="Eras Demi ITC" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" layoutY="78.0" prefHeight="33.0" prefWidth="180.0" text="Nombres" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+                     <font>
+                        <Font name="Eras Demi ITC" size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="5.0" layoutY="8.0" text="Conoce a nuestro " textFill="#fcfcfc">
+                     <font>
+                        <Font name="Yu Gothic UI Light" size="22.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutY="44.0" prefHeight="5.0" prefWidth="1050.0" styleClass="anchorPane" stylesheets="@../resource/KinalStoreCSS.css" />
+               </children>
+            </Pane>
+            <Label layoutX="203.0" layoutY="223.0" text="17/04/2024" textFill="WHITE">
+               <font>
+                  <Font name="Eras Demi ITC" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="203.0" layoutY="84.0" text="José Francisco" textFill="WHITE">
+               <font>
+                  <Font name="Eras Demi ITC" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="203.0" layoutY="131.0" text="González Ordoñez" textFill="WHITE">
+               <font>
+                  <Font name="Eras Demi ITC" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="203.0" layoutY="178.0" text="2023-195" textFill="WHITE">
+               <font>
+                  <Font name="Eras Demi ITC" size="19.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="185.0" layoutY="8.0" prefHeight="33.0" prefWidth="268.0" text="Programador" textFill="#fcfcfc">
+               <font>
+                  <Font name="Yu Gothic UI Light" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="327.0" fitWidth="251.0" layoutX="618.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow height="68.44" radius="33.72" spread="0.15" width="68.44" />
+         </effect>
+         <image>
+            <Image url="@../image/yo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="400.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow height="39.79" radius="19.145" spread="0.56" width="38.79" />
+         </effect>
+         <image>
+            <Image url="@../image/Logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="55.0" fitWidth="54.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/home_house_3526.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
